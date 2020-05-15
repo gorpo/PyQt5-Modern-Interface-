@@ -1,0 +1,63 @@
+<RCC>
+  <qresource prefix="abre_menu">
+    <file>images/menu-4-24.png</file>
+  </qresource>
+  <qresource prefix="logo_python">
+    <file>images/python.png</file>
+  </qresource>
+  <qresource prefix="menu_iniciar">
+    <file>images/iniciar.png</file>
+  </qresource>
+  <qresource prefix="avanca_site">
+    <file>images/arrow-right.png</file>
+  </qresource>
+  <qresource prefix="reload_site">
+    <file>images/reload.png</file>
+  </qresource>
+  <qresource prefix="newPrefix"/>
+  <qresource prefix="volta_site">
+    <file>images/arrow-left.png</file>
+  </qresource>
+  <qresource prefix="browser">
+    <file>images/browser-24.png</file>
+  </qresource>
+  <qresource prefix="redimensiona">
+    <file>images/cil-move.png</file>
+  </qresource>
+  <qresource prefix="home">
+    <file>images/home-5-24.png</file>
+  </qresource>
+  <qresource prefix="fechar">
+    <file>images/icons8-delete-24.png</file>
+  </qresource>
+  <qresource prefix="minimizar">
+    <file>images/minimize.png</file>
+  </qresource>
+  <qresource prefix="maximizar">
+    <file>images/icons8-toggle-full-screen-24.png</file>
+  </qresource>
+  <qresource prefix="voltar_maximizado">
+    <file>images/volta_full_screen.png</file>
+  </qresource>
+  <qresource prefix="camera">
+    <file>images/screenshot-24.png</file>
+  </qresource>
+  <qresource prefix="bot">
+    <file>images/telegram.png</file>
+  </qresource>
+  <qresource prefix="server">
+    <file>images/server-24.png</file>
+  </qresource>
+  <qresource prefix="banco de dados">
+    <file>images/data-configuration-24.png</file>
+  </qresource>
+  <qresource prefix="deepnude">
+    <file>images/icons8-bottom-24.png</file>
+  </qresource>
+  <qresource prefix="snes">
+    <file>images/joystick-2-24.png</file>
+  </qresource>
+  <qresource prefix="configuracoes">
+    <file>images/services-24.png</file>
+  </qresource>
+</RCC>

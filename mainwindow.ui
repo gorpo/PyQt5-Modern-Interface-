@@ -1,0 +1,4216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>892</width>
+    <height>699</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="janela_pai">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="menuTopo">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(31, 31, 31);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_abre_menu">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(31,31,31);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="botao_abrir_menu">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>-1</y>
+            <width>75</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-image: url(:/abre_menu/images/menu-4-24.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_informacoes">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(31,31,31);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>171</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+          </property>
+          <property name="text">
+           <string>Manicomio Pannel</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_minimizar">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(31,31,31);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="botao_minimizar">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>50</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-image: url(:/minimizar/images/minimize.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_maximizar">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(31,31,31);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="botao_maximizar">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>50</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	
+	background-image: url(:/maximizar/images/icons8-toggle-full-screen-24.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_fechar">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(31,31,31);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="botao_fechar">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>50</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-image: url(:/fechar/images/icons8-delete-24.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="conteiner_central">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(35, 35, 35);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="menu_esquerda">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(31, 31, 31);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="menu_home">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>250</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="botao_home">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-image: url(:/home/images/home-5-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="texto_menu_home">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>-1</y>
+             <width>191</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+           </property>
+           <property name="text">
+            <string>home</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="menu_browser">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>50</y>
+            <width>250</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="botao_browser">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-image: url(:/browser/images/browser-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="texto_menu_browser">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>-1</y>
+             <width>191</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+           </property>
+           <property name="text">
+            <string>browser</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="menu_python">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>100</y>
+            <width>250</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="botao_python">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-image: url(:/logo_python/images/python.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="texto_menu_python">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>-1</y>
+             <width>191</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+           </property>
+           <property name="text">
+            <string>python</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="menu_server_deepfake">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>150</y>
+            <width>250</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="botao_server_deepfake">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	
+	background-image: url(:/server/images/server-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="texto_menu_server_deepfake">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>-1</y>
+             <width>191</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+           </property>
+           <property name="text">
+            <string>server deep fake</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="menu_database">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>200</y>
+            <width>250</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="botao_database">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>50</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-image: url(:/banco de dados/images/data-configuration-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="texto_menu_database">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>-1</y>
+             <width>191</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+           </property>
+           <property name="text">
+            <string>database</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="menus_bots">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>300</y>
+            <width>250</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="menu_bot1">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>250</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="botao_menu_bot1">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>50</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-image: url(:/bot/images/telegram.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="texto_menu_bot1">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>0</y>
+              <width>191</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+            </property>
+            <property name="text">
+             <string>chatbot's</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="menu_bot2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>50</y>
+             <width>250</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="botao_menu_bot2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>50</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-image: url(:/bot/images/telegram.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="texto_menu_bot2">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>0</y>
+              <width>191</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+            </property>
+            <property name="text">
+             <string>deep nude</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="menu_bot3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>250</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="botao_menu_bot3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>50</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-image: url(:/bot/images/telegram.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="texto_menu_bot3">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>0</y>
+              <width>191</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+            </property>
+            <property name="text">
+             <string>manicomio</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="menus_camera">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>250</y>
+            <width>250</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="menu_camera1">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>250</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="botao_menu_camera1">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>50</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-image: url(:/camera/images/screenshot-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="texto_menu_camera1">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>0</y>
+              <width>191</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+            </property>
+            <property name="text">
+             <string>camera</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="menu_camera2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>50</y>
+             <width>250</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="botao_menu_camera2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>50</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-image: url(:/camera/images/screenshot-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="texto_menu_camera2">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>-1</y>
+              <width>191</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+            </property>
+            <property name="text">
+             <string>camera</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="menu_camera3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>250</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="botao_menu_camera3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>50</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-image: url(:/camera/images/screenshot-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="texto_menu_camera3">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>-1</y>
+              <width>191</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+            </property>
+            <property name="text">
+             <string>deep fake</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="menu_camera4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>150</y>
+             <width>250</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="botao_menu_camera4">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>50</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-image: url(:/camera/images/screenshot-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="texto_menu_camera4">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>-1</y>
+              <width>191</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+            </property>
+            <property name="text">
+             <string>recognition</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="menu_camera5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>200</y>
+             <width>250</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+	border: none;
+}
+QFrame:hover {
+	background-color: rgb(30,144,255);
+}
+QFrame:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="botao_menu_camera5">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>50</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-image: url(:/camera/images/screenshot-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="texto_menu_camera5">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>-1</y>
+              <width>191</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+}</string>
+            </property>
+            <property name="text">
+             <string>face recognition</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="janela_central">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="barra_status">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(44, 44, 44);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="status">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(98, 103, 111);
+font: 10px ,Segoe UI;
+}
+
+</string>
+               </property>
+               <property name="text">
+                <string>infos</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="status_pagina_atual">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(98, 103, 111);
+font: 10px ,Segoe UI;
+}
+
+</string>
+               </property>
+               <property name="text">
+                <string>| home</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="pagina_home">
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QStackedWidget" name="stackedWidget_home">
+                <widget class="QWidget" name="home_01">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(0, 0, 0);</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_12">
+                  <item>
+                   <widget class="QLabel" name="background">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="pixmap">
+                     <pixmap>images/bg_home.jpg</pixmap>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="home_02">
+                 <layout class="QVBoxLayout" name="verticalLayout_7">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="sizeConstraint">
+                   <enum>QLayout::SetDefaultConstraint</enum>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QFrame" name="area_trabalho">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(0, 0, 0);</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::NoFrame</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QLabel" name="bg_area_trabalho">
+                     <property name="enabled">
+                      <bool>true</bool>
+                     </property>
+                     <property name="geometry">
+                      <rect>
+                       <x>-10</x>
+                       <y>-10</y>
+                       <width>931</width>
+                       <height>591</height>
+                      </rect>
+                     </property>
+                     <property name="layoutDirection">
+                      <enum>Qt::LeftToRight</enum>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(0, 0, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>images/bg_home.jpg</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QFrame" name="menu_iniciar_aberto">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>340</y>
+                       <width>0</width>
+                       <height>251</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QFrame {
+	
+	background-color: rgba(35, 35, 35, 35%);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}</string>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <widget class="QPushButton" name="botao_iniciar_deepnude">
+                      <property name="geometry">
+                       <rect>
+                        <x>90</x>
+                        <y>170</y>
+                        <width>75</width>
+                        <height>75</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	background-image: url(:/bot/images/telegram.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	padding-top: 50px; 
+	
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	
+	background-color: rgb(35, 35, 35);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>deepfake bot</string>
+                      </property>
+                     </widget>
+                     <widget class="QPushButton" name="botao_iniciar_botmanicomio">
+                      <property name="geometry">
+                       <rect>
+                        <x>170</x>
+                        <y>170</y>
+                        <width>75</width>
+                        <height>75</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	background-image: url(:/bot/images/telegram.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	padding-top: 50px; 
+	
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	
+	background-color: rgb(35, 35, 35);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>manicomio bot</string>
+                      </property>
+                     </widget>
+                     <widget class="QPushButton" name="botao_iniciar_recognition">
+                      <property name="geometry">
+                       <rect>
+                        <x>170</x>
+                        <y>90</y>
+                        <width>75</width>
+                        <height>75</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	
+	background-image: url(:/camera/images/screenshot-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	padding-top: 50px; 
+	
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	
+	background-color: rgb(35, 35, 35);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>recognition</string>
+                      </property>
+                     </widget>
+                     <widget class="QPushButton" name="botao_iniciar_server">
+                      <property name="geometry">
+                       <rect>
+                        <x>90</x>
+                        <y>10</y>
+                        <width>75</width>
+                        <height>75</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	background-image: url(:/server/images/server-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	padding-top: 50px; 
+	
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	
+	background-color: rgb(35, 35, 35);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>server</string>
+                      </property>
+                     </widget>
+                     <widget class="QPushButton" name="botao_iniciar_facerecog">
+                      <property name="geometry">
+                       <rect>
+                        <x>90</x>
+                        <y>90</y>
+                        <width>75</width>
+                        <height>75</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	
+	background-image: url(:/camera/images/screenshot-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	padding-top: 50px; 
+	
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	
+	background-color: rgb(35, 35, 35);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>face recog</string>
+                      </property>
+                     </widget>
+                     <widget class="QPushButton" name="botao_iniciar_browser">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>75</width>
+                        <height>75</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	background-image: url(:/browser/images/browser-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	padding-top: 50px; 
+	
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	
+	background-color: rgb(35, 35, 35);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>browser</string>
+                      </property>
+                     </widget>
+                     <widget class="QPushButton" name="botao_iniciar_camera">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>90</y>
+                        <width>75</width>
+                        <height>75</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	
+	background-image: url(:/camera/images/screenshot-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	padding-top: 50px; 
+	
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	
+	background-color: rgb(35, 35, 35);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>camera</string>
+                      </property>
+                     </widget>
+                     <widget class="QPushButton" name="botao_iniciar_configuracoes">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>170</y>
+                        <width>75</width>
+                        <height>75</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	background-image: url(:/configuracoes/images/services-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	padding-top: 50px; 
+	
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	
+	background-color: rgb(35, 35, 35);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>configs</string>
+                      </property>
+                     </widget>
+                     <widget class="QPushButton" name="botao_iniciar_bancodados">
+                      <property name="geometry">
+                       <rect>
+                        <x>170</x>
+                        <y>10</y>
+                        <width>75</width>
+                        <height>75</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton {
+	background-image: url(:/banco de dados/images/data-configuration-24.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	padding-top: 50px; 
+	
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	
+	background-color: rgb(35, 35, 35);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>database</string>
+                      </property>
+                     </widget>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="barra_iniciar">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>3</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>22</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(15, 16, 16);</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::NoFrame</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_11">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QPushButton" name="botao_menu_iniciar">
+                       <property name="maximumSize">
+                        <size>
+                         <width>30</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+	background-image: url(:/menu_iniciar/images/iniciar.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	
+	background-color: rgb(35, 35, 35);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="barra_tarefas_iniciar">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="relogio2" native="true">
+                       <property name="maximumSize">
+                        <size>
+                         <width>50</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="botao_direita_iniciar">
+                       <property name="maximumSize">
+                        <size>
+                         <width>10</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pagina_camera">
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="area_video">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="menus_fotografia">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QRadioButton" name="camera_local">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+}
+
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string>camera local</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="camera_droidcam">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="autoFillBackground">
+                    <bool>false</bool>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+}
+
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string>droidcam</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="botao_inica_video">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>iniciar video</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="botao_bate_foto">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>bater foto</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="deep_fake">
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="conteiner_logo_deepnude">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="logo_deepnude">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap>images/logo.png</pixmap>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="conteiner_imagens_deepnude">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="imagem_normal_deepnude">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap>images/bg1.png</pixmap>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="imagem_renderizada_deepnude">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap>images/bg2.png</pixmap>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="conteiner_botoes_deepnude">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="botao_imagem_deepnude">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>carregar imagem</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="botao_criar_deepnude">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>deep fake</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="recognition">
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="area_video_recognition">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>images/bg_camera.png</pixmap>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="conteiner_botoes_recognition">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QRadioButton" name="camera_local_recognition">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+}
+
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string>camera local</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="camera_droidcam_recognition">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="autoFillBackground">
+                    <bool>false</bool>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+}
+
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string>droidcam</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="botao_recognition_pessoas">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>face recognition</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="botao_recognition_completo">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>recognition full</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="face_recognition">
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="area_video_facerecognition">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>images/bg_camera.png</pixmap>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="conteiner_botoes_facerecognition">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_15">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QRadioButton" name="camera_local_facerecognition">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+}
+
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string>camera local</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="camera_droidcam_facerecognition">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="autoFillBackground">
+                    <bool>false</bool>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QRadioButton{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+font: 20px Segoe UI, bold;
+
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+}
+
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string>droidcam</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="botao_inica_facerecognition">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>face recognition</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="server_deepnude">
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QWebEngineView" name="web_browser_flask" native="true">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(15, 16, 16);</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="conteiner_serverdeepnude">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>55</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Panel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="inicia_server_deepnude">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>42</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>start</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="endereco_localhost">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>localhost</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="endereco_ngrok">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>ngrok</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="bot_deepfake">
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_3">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label">
+                 <property name="geometry">
+                  <rect>
+                   <x>40</x>
+                   <y>160</y>
+                   <width>300</width>
+                   <height>300</height>
+                  </rect>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 0px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLabel:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLabel:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>images/marcinho.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="logo_deepnude_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>280</x>
+                   <y>40</y>
+                   <width>230</width>
+                   <height>72</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>images/logo.png</pixmap>
+                 </property>
+                </widget>
+                <widget class="QTextBrowser" name="textBrowser">
+                 <property name="geometry">
+                  <rect>
+                   <x>410</x>
+                   <y>160</y>
+                   <width>391</width>
+                   <height>300</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(35, 35, 35);</string>
+                 </property>
+                 <property name="html">
+                  <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Deep Nudes&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; são &lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-style:italic;&quot;&gt;fakes de nudes&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; que eu crio usando &lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-style:italic;&quot;&gt;Deep Learning&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; e &lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-style:italic;&quot;&gt;Machine Learning&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;.&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-style:italic;&quot;&gt;Devido este processo ser longo e consumir muito processamento!!!&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Agora quero que preste atenção:&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br /&gt;- o processo todo pode levar ate 10 minutos!&lt;br /&gt;- nem sempre estou online, afinal isto é muito pesado!&lt;br /&gt;- irei avisando ao longo do processo ate entregar a imagem!&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Como usar meus serviços:&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br /&gt;- apenas faça um upload de uma imagem e espere!&lt;br /&gt;- só reconheço imagens de biquini ou roupas intimas!&lt;br /&gt;- preste atenção na imagem de exemplo!&lt;br /&gt;- reconheço imagens somente como exemplo mostrado!&lt;br /&gt;- fique a vontade para testar com imagens fora do contexto do exemplo...&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;========================================&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br /&gt;Conteudo criado apenas para fins academicos, não nos responsabilizamos pelo que aqui é criado ou postado!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="conteiner_bot_deepfake">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Panel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_10">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="botao_inicia_bot_deepnude">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>42</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>start</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="bot_token">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>insira o token bot</string>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="endereco_bot_api">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>aguarde link api json</string>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="browser">
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="voltar_site">
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-image: url(:/volta_site/images/arrow-left.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="atualiza_site">
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-image: url(:/reload_site/images/reload.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="avanca_site">
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-image: url(:/avanca_site/images/arrow-right.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="input_site">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>https://</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="botao_envia_site">
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>45</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+	background-image: url(:/avanca_site/images/arrow-right.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWebEngineView" name="web_browser" native="true"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="python_console">
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QWidget" name="area_consolepython" native="true">
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QWidget{
+	
+	background-color: rgb(15, 16, 16);
+	color: rgb(255, 255, 255);
+	font: 15px Consolas, regular;
+}</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="banco_de_dados">
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="barra_menus_banco_dados">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>300</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_17">
+                 <item>
+                  <widget class="QFrame" name="conteiner_esquerda_db">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_15">
+                    <property name="spacing">
+                     <number>5</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QLineEdit" name="db_texto_titulo">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>titulo</string>
+                      </property>
+                      <property name="echoMode">
+                       <enum>QLineEdit::Normal</enum>
+                      </property>
+                      <property name="clearButtonEnabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QTextEdit" name="db_texto_codigo">
+                      <property name="styleSheet">
+                       <string notr="true">QTextEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Courier New;
+}
+QTextEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QTextEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                      </property>
+                      <property name="html">
+                       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Courier New'; font-size:15px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:15px;&quot;&gt;codigo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                      <property name="overwriteMode">
+                       <bool>false</bool>
+                      </property>
+                      <property name="placeholderText">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="conteiner_direita_db">
+                   <property name="maximumSize">
+                    <size>
+                     <width>400</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_14">
+                    <property name="spacing">
+                     <number>5</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QLineEdit" name="db_texto_link">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>link</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QTextEdit" name="db_texto_observacao">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>250</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QTextEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Courier New;
+}
+QTextEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QTextEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                      </property>
+                      <property name="html">
+                       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Courier New'; font-size:15px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:15px;&quot;&gt;observações&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="conteiner_menus_db">
+                      <property name="frameShape">
+                       <enum>QFrame::NoFrame</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_18">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="botao_db_adiciona">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>adiciona</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="botao_db_atualiza">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>atualiza</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="botao_db_deleta">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>deleta</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="conteiner_dados_db">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_16">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>9</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>9</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>9</number>
+                 </property>
+                 <item>
+                  <widget class="QTableView" name="tabela_dados_db">
+                   <property name="styleSheet">
+                    <string notr="true">QHeaderView {
+background: rgb(30, 30, 30);
+}
+QHeaderView::section{
+	color: rgb(255, 255, 255);
+background: rgb(35,35,35);
+}
+QTableCornerButton::section{
+background: rgb(35,35,35);
+}
+QHeaderView::section:pressed{
+background: rgb(30,144,255);
+}
+QTableCornerButton::section:pressed{
+background: rgb(30,144,255);
+}
+
+
+
+QTableView{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QTableView:hover{
+border: 2px solid rgb(55,55,55);
+}
+QTableView:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}
+* { gridline-color: gray }</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="gridStyle">
+                    <enum>Qt::SolidLine</enum>
+                   </property>
+                   <attribute name="horizontalHeaderDefaultSectionSize">
+                    <number>150</number>
+                   </attribute>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="botManicomio">
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="conteiner_topo_manicomiobot">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="img_bot_manicomio">
+                 <property name="geometry">
+                  <rect>
+                   <x>40</x>
+                   <y>140</y>
+                   <width>300</width>
+                   <height>300</height>
+                  </rect>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 0px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLabel:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLabel:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>images/crowley.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QTextBrowser" name="textBrowser_bot_manicomio">
+                 <property name="geometry">
+                  <rect>
+                   <x>400</x>
+                   <y>140</y>
+                   <width>391</width>
+                   <height>300</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(35, 35, 35);</string>
+                 </property>
+                 <property name="html">
+                  <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Bot Manicomio&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot; font-size:16pt; vertical-align:super;&quot;&gt;desenvolvido para plataforma telegram&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;comandos&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - mostra todos comandos&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;start &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- inicia o bot&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;pin &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Fixa uma mensagem no grupo(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;unpin &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Desfixa a mensagem fixada no grupo(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;title&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Define o titulo do grupo(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;defregras&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - define regras(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;ban&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- bane usuario(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;unban&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Desbane um usuario(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;mute &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- muta usuario(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;unmute&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Desrestringe um usuario(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;warn &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Adverte um usuario(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;welcome &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Define a mensagem de welcome(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;unwarn &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Remove as advertencias do usuario(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;kick&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - kicka usuario(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;regras&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - ve as regras&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;config &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- informacoes serao enviadas no privado&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;admdebu&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;g -  debug do admin&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;tr &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Traduz um texto&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;yt &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Pesquisa videos no YouTube&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;ytdl&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Baixa o audio de um video no YouTube&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;r&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - pesquisa um termo no redit&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;coub&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Pesquisa de pequenas animacoes&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;dados&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - jogo de dados&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;gif&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - gif do giphy&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;git&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - usuario do github&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - id do usuario&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;ip&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - informa dados de um ip&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;jsondump&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - retorna dados formatados&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;stickerid&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - pega id de um sticker&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;getsticker&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - baixa um sticker(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;criar_sticker &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- cria um pacote de stickers(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;kibar  &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- copia um sticker para o pacote de stickers(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;pypi&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - pesquisa libs python&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;rextester&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - interpretador de varias linguagens de programa??o&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;mark&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Repete o texto informado usando Markdown&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;html &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Repete o texto informado usando HTML&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;request &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Faz uma requisicao a um site&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;site &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- exibe o site da equipe&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;facebook&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - exibe o facebook da equipe, cadastre-se&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;netflix &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- exibe nosso site de netflix gratis&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;iptv &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- exibe nosso site de iptv gratis&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;anime&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - exibe nosso site de anime gratis&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;pkg &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- exibe nosso site de pkg's para ps3 gratis&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;biblioteca&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - exibe nossa biblioteca hacker&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;curso&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - exibe nosso site de  cursos&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;doadores&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - exibe instruces completas para doadores&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;painel &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- exibe nosso painel hacker&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;ban&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Bane um usuario(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;config&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Envia um menu de configuracoes(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;defregras&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Define as regras do grupo(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;kick &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Kicka um inscrito(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;mute&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Restringe um usuario(apenas admins)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;coub&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Pesquisa de pequenas animacoes&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;echo&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Repete o texto informado&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;gif &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Pesquisa de GIFs&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;git &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Envia informaces de um user do GitHub&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;html&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Repete o texto informado usando HTML&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;ip &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Exibe informaces sobre um IPdominio&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;jsondump&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Envia o json da mensagem&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;mark &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Repete o texto informado usando Markdown&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Envia uma print de um site&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;pypi&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Pesquisa de modulos no PyPI&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;r&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Pesquisa de topicos no Reddit&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;request&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Faz uma requisicao a um site&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;shorten &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Encurta uma URL&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;token&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Exibe informaces de um token de bot&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;tr &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Traduz um texto&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;yt &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Pesquisa v?deos no YouTube&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;ytdl &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Baixa o ?udio de um v?deo no YouTube&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;admins &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Mostra a lista de admins do chat&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;dados &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Envia um numero aleatorio de 1 a 6&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;bug&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Reporta um bug ao meu desenvolvedor&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Exibe suas informaces ou de um usuario&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;ping &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Responde com uma mensagem de ping&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;regras&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Exibe as regras do grupo&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;roleta&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Para jogar a Roleta Russa&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;backup&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Faz backup do bot(apenas dev)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;cmd&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Executa um comando(apenas dev)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;chat&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Obtem infos de um chat(apenas dev)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;del&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Deleta a mensagem respondida(apenas dev)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;doc&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Envia um documento do server(apenas dev)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;eval&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Executa uma função Python(apenas dev)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;exec &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Executa um código Python(apenas dev)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;leave&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - O bot sai do chat(apenas dev)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;plist &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Lista os plugins ativos(apenas dev)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;promote&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Promove alguém a admin(apenas dev)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;restart&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Reinicia o bot(apenas dev)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;upgrade&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Atualiza a base do bot(apenas dev)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;upload&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; - Envia um arquivo para o servidor(apenas dev)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="logo_bot_manicomio">
+                 <property name="geometry">
+                  <rect>
+                   <x>220</x>
+                   <y>20</y>
+                   <width>301</width>
+                   <height>101</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>images/logo_manicomio.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="rodape_bot_manicomio">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Panel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_19">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLineEdit" name="bot_token_manicomio">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>insira o token do bot</string>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="bot_canalid_manicomio">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>insira id do canal do bot</string>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="bot_idpessoal_manicomio">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLineEdit{
+border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+padding: 10px;
+background-color: rgb(30,30,30);
+	color: rgb(203, 203, 203);
+font: 15px Segoe UI, bold;
+}
+QLineEdit:hover{
+border: 2px solid rgb(55,55,55);
+}
+QLineEdit:focus{
+border: 2px solid  rgb(85, 170, 255);
+	color: rgb(85, 170, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>insira sua id do telegram</string>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="botao_inicia_bot_manicomio">
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>42</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	background-color:transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid rgb(45,45,45);
+border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font: 20px SegoeUIl, bold;
+}
+QPushButton:hover {
+	background-color: rgb(30,144,255);
+}
+QPushButton:pressed {
+	background-color: rgb(1,84,149);
+}</string>
+                </property>
+                <property name="text">
+                 <string>start</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page">
+             <widget class="QLabel" name="label_2">
+              <property name="geometry">
+               <rect>
+                <x>330</x>
+                <y>122</y>
+                <width>321</width>
+                <height>151</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>configs</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="rodape">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>17</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(31, 31, 31);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="rodape_desenvolvedor">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(98, 103, 111);
+font: 10px ,Segoe UI;
+margin-right: 5px;
+}
+
+</string>
+               </property>
+               <property name="text">
+                <string>manicomio | 2020</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="rodape_versao">
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	background-color: transparent;
+	color: rgb(98, 103, 111);
+font: 10px ,Segoe UI;
+margin-right: 5px;
+}
+
+</string>
+               </property>
+               <property name="text">
+                <string>v1.0  </string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="redimensionador">
+               <property name="maximumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QSizeGrip {
+	
+	background-image: url(:/redimensiona/images/cil-move.png);
+	background-position: center;
+	background-repeat: no-reperat;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header>PyQt5.QtWebEngineWidgets</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="files_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
