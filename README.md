@@ -24,7 +24,7 @@
 - Telepot
 - PyQt5
 - Outras lib's ver arquivos ou logs de erro
-- Subistitua a API do telegram no arquivo main.py
+
 
 # Instalações previas das libs que cumprem os requisitos para windows10:<br>
 --> Torch:<br>
