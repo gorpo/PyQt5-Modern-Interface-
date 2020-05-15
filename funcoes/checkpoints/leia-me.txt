@@ -1,0 +1,5 @@
+por nesta pasta as libs
+
+cm.lib
+mm.lib
+mn.lib
