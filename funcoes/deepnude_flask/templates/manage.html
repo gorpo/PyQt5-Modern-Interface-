@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block body %}
+
+   <section class="breadcrumb-section set-bg" data-setbg="/static/img/bg.jpg">
+       <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb-text">
+                        <h2>FILE MANAGER</h2>
+                        <div class="bt-option">
+                       <!--     <a href="./index.html">Home</a>
+                            <span>About</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- ChoseUs Section Begin -->
+    <section class="choseus-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                </div>
+            </div>
+
+
+            {% for photo in files_list %}
+
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item2">
+                        <h4> <a class="label_imagens">{{ photo }}</a></h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item2">
+                        <h4><a href="{{ url_for('open_file', filename=photo) }}"class="primaryaa">Abrir</a></h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item2">
+                    <h4><a href="{{ url_for('delete_file', filename=photo) }}"class="primaryaa">deletar</a></h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item2">
+                    <h4><a href="{{ url_for('deepnude', filename=photo) }}" class="primaryaa">deepfake</a></h4>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    <!-- ChoseUs Section End -->
+<button onclick="topFunction()" id="myBtn" title="Fazer upload de mais fotos agora?">BACK TO TOP</button>
+
+
+<!--
+
+<a href="{{ url_for('upload_file') }}">Upload</a> /
+<a href="{{ url_for('manage_file') }}">Manage</a>
+<hr>
+-->
+
+
+
+
+{% endblock %}

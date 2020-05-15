@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block body %}
+<section class="hero-section">
+        <div class="hs-slider owl-carousel">
+            <div class="hs-item set-bg" data-setbg="/static/img/bg.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+<div class="hi-text">
+        <span>Deep Nudes</span>
+        <h1>Get <strong>deepnudes</strong> from pics</h1>
+
+                </div>
+
+<!-- <a href="{{ url_for('upload_file') }}">Upload</a> -->
+
+<form method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    {{ form.photo(multiple="multiple")}}
+    {% for error in form.photo.errors %}
+        <span style="color: red;">{{ error }}</span>
+    {% endfor %}
+   {{ form.submit }}
+    <a href="{{ url_for('manage_file') }}" class="primary-btn">Manage</a>
+</form>
+  </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% if success %}
+
+
+<br>
+<p>Upload Success!</p>
+{% endif %}
+
+{% endblock %}

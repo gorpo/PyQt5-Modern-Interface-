@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <!-- Gallery Section Begin -->
+
+
+
+        <div class="hs-slider owl-carousel" >
+            <div class="hs-item set-bg" data-setbg="/static/img/bg.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col- ">
+
+<div class="hi-text">
+        <h1>Get <strong>deepnudes</strong> from pics</h1>
+                </div>
+
+        <div class="gallery">
+            <div class="grid-sizer"></div>
+            <div class="gs-item set-bg" data-setbg="{{ file_url }}">
+                <a href="{{ file_url }}" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<a href="{{ url_for('upload_file') }}"><button onclick="topFunction()" id="myBtn" title="Fazer upload de mais fotos agora?">Upload More Photos</button></a>
+
+
+
+
+<!--
+<a href="{{ url_for('upload_file') }}">Upload</a> /
+<a href="{{ url_for('manage_file') }}">Manage</a>
+<hr>
+
+<p>URL: {{ file_url }}</p>
+<img src="{{ file_url }}">
+-->
+
+{% endblock %}
