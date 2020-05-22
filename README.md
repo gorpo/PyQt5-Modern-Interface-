@@ -55,6 +55,11 @@
 --> Visual Studio<br>
 * Referencia: https://stackoverflow.com/questions/29846087/microsoft-visual-c-14-0-is-required-unable-to-find-vcvarsall-bat
 <code>https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017</code>
+--> Instalando Cuda 9.0 no windows 10<br>
+<code>https://medium.com/@andersonlentz/instalando-cuda-9-0-no-windows-10-ea7cabd9ad6b</code><br>
+<code>https://towardsdatascience.com/installing-tensorflow-with-cuda-cudnn-and-gpu-support-on-windows-10-60693e46e781</code><br>
+self.gpu_ids = [0] #FIX CPU<br>
+self.gpu_ids = [] #FIX CPU<br>
 
 
 # Lib's adicionais e obrigatórias:
